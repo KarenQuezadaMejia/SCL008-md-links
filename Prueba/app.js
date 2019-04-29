@@ -8,7 +8,7 @@ const FileHound = require("filehound");
 //const mdLinks = require("./md-links");
 
 const files = FileHound.create()
-  .paths('/Users/mac/Desktop/LABORATORIA/AFRONTEND')
+  .paths('/Users/mac/Desktop/LABORATORIA/AFRONTEND/SCL008-md-links/Prueba')
   .ext('md')
   .find();
  

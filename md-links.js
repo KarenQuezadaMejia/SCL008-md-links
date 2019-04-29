@@ -1,20 +1,29 @@
-
 const fs = require('fs');
 const fetch = require('node-fetch');
 const comand = process.argv[2];
-const markdownLinkExtractor = require('markdown-link-extractor');
-const markdown = fs.readFileSync(comand).toString();
-const links = markdownLinkExtractor(markdown);
 const FileHound = require('filehound');
-exports.links = links;
+//exports.links = links;
 
-const files = FileHound.create()
-  .paths('/Users/mac/Desktop/LABORATORIA/AFRONTEND')
+/* const files = FileHound.create()
+  .paths('/Users/mac/Desktop/LABORATORIA/AFRONTEND/Prueba')
   .ext('md')
-  .find();
+  .find(); */
  
-files.then(console.log);
+//files.then(console.log);
 
+/* fs.readFile('./README.md', 'utf-8', (err, data) => {
+  if (err) throw err;
+  console.log(data);
+}); */
+////////////
+const markdown = fs.readFileSync('README.md').toString();
+const markdownLinkExtractor = require('markdown-link-extractor');
+const links = markdownLinkExtractor(markdown);
+
+links.forEach(function (link) {
+    console.log(link);
+});
+/////////////////
 
 /* files = FileHound.create()
   .paths('/Users/mac/Desktop/LABORATORIA/AFRONTEND')
