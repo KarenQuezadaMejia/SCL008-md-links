@@ -1,10 +1,8 @@
-const mdLinks = require('../');
+const mdLinks = require('../md-links');
 
 
-describe('mdLinks', () => {
-
-  it('should...', () => {
-    console.log('FIX ME!');
-  });
-
-});
+describe('readFilesAs', () => {
+  it('deberia retornar links archivo ruta absoluta',()=>{
+    expect(readFileAs ('https://es.wikipedia.org/wiki/Node.js')).resolve.toBe(True);        
+  })
+})
