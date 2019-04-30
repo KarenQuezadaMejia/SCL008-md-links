@@ -2,7 +2,7 @@ const mdLinks = require('../md-links');
 
 
 describe('readFilesAs', () => {
-  it('deberia retornar links archivo ruta absoluta',()=>{
-    expect(readFileAs ('https://es.wikipedia.org/wiki/Node.js')).resolve.toBe(True);        
+  it('deberia retornar https://github.com/workshopper/how-to-npm-200==>OK',()=>{
+    expect(readFileAs ('url + "-" + res.status + "==>" + res.statusText')).resolve.toBe(True);        
   })
 })

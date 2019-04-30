@@ -6,15 +6,6 @@ const markdownLinkExtractor = require('markdown-link-extractor');
 
 
 ////////////
-/*const markdown = fs.readFileSync('README.md').toString();
-const markdownLinkExtractor = require('markdown-link-extractor');
-const links = markdownLinkExtractor(markdown);
-
-links.forEach(function (link) {
-    console.log(link);
-});
-*/
-
 const readFilesAs = (files,type) => {
   return new Promise((resolve, reject)=>{
     fs.readFile(files,type, (error, content) =>{
@@ -44,6 +35,7 @@ readFilesAs(comand,'utf-8')
 module.exports.readFilesAs = readFilesAs;
 /////////////////
 
+
 /* 	links.forEach(function (element) {
 		fetch(element).then((res) => {
 			console.log(res.url + "-" + res.status + "==>" + res.statusText);
@@ -60,6 +52,14 @@ module.exports.readFilesAs = readFilesAs;
   if (err) throw err;
   console.log(data);
 }); */
+/*const markdown = fs.readFileSync('README.md').toString();
+const markdownLinkExtractor = require('markdown-link-extractor');
+const links = markdownLinkExtractor(markdown);
+
+links.forEach(function (link) {
+    console.log(link);
+});
+*/
 
 //exports.links = links;
 
