@@ -19,13 +19,23 @@ algunas estadísticas.
 
 ![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
 
-## Introducción
+## Instalación
 
-Ruta para poder extraer links de un archivo Readme.md
+ * Para la instalación, es necesario abrir la terminal y ejecutar la instalación a través del comando 
+ <p>"npm install KarenQuezadaMejia/SCL008-md-links"</p>
+<img src="https://i.ibb.co/LQGWDpF/Captura-de-pantalla-2019-04-30-a-la-s-15-14-55.png" alt="Captura-de-pantalla-2019-04-30-a-la-s-15-14-55">
+
+* Comando para poder extraer links de un archivo Readme.md
 <img src="https://i.ibb.co/pxG5gqF/terminal.jpg" alt="terminal">
-escribiendo en la terminal "md-links ./README.md"
 
 
-Muestra links que se pudo extraer. 
+* Escribiendo en la terminal "md-links ./README.md"
+
+        Muestra links que se pudo extraer. 
 <img src="https://i.ibb.co/2sNMLWW/screen-Terminal.jpg">
+<img src="https://i.ibb.co/JdCQxBL/Captura-de-pantalla-2019-04-30-a-la-s-15-16-37.png" alt="Captura-de-pantalla-2019-04-30-a-la-s-15-16-37">
 
+
+## Planificación de Proyecto
+
+https://trello.com/b/bA4fPhFU/scl008-md-links

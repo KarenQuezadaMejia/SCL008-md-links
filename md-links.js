@@ -6,6 +6,8 @@ const markdownLinkExtractor = require('markdown-link-extractor');
 
 
 ////////////
+
+
 const readFilesAs = (files,type) => {
   return new Promise((resolve, reject)=>{
     fs.readFile(files,type, (error, content) =>{
