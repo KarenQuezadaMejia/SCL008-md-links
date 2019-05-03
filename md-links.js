@@ -7,7 +7,6 @@ const markdownLinkExtractor = require('markdown-link-extractor');
 
 ////////////
 
-
 const readFilesAs = (files,type) => {
   return new Promise((resolve, reject)=>{
     fs.readFile(files,type, (error, content) =>{
@@ -25,8 +24,12 @@ readFilesAs(comand,'utf-8')
     const links = markdownLinkExtractor(res);
     links.forEach(function (element) {
       fetch(element)
-    .then((res) => {
-        console.log(res.url + "-" + res.status + "==>" + res.statusText);
+      .then((res) => {
+        let links = {}
+        links.url= res.url;
+        links.status = res.status;
+        links.text = res.statusText;
+        console.log(links);
       })
   .catch(error => {
         console.log(error.message)
